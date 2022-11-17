@@ -2,11 +2,13 @@ import java.util.Arrays;
 
 public class user {
     private String [] FIO;
-    private String [] DateOfBirth;
+    private String  DateOfBirth;
     private long PhoneNum;
     private char Gender;
 
-    public user(String[] FIO, String[] dateOfBirth, long phoneNum, char gender) {
+
+
+    public user(String[] FIO, String dateOfBirth, long phoneNum, char gender) {
         this.FIO = FIO;
         DateOfBirth = dateOfBirth;
         PhoneNum = phoneNum;
@@ -24,11 +26,11 @@ public class user {
         this.FIO = FIO;
     }
 
-    public String[] getDateOfBirth() {
+    public String getDateOfBirth() {
         return DateOfBirth;
     }
 
-    public void setDateOfBirth(String[] dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         DateOfBirth = dateOfBirth;
     }
 
@@ -50,9 +52,8 @@ public class user {
 
     @Override
     public String toString() {
-        return "user{" +
-                "FIO=" + Arrays.toString(FIO) +
-                ", DateOfBirth=" + Arrays.toString(DateOfBirth) +
+        return "FIO=" + Arrays.toString(FIO) +
+                ", DateOfBirth='" + DateOfBirth + '\'' +
                 ", PhoneNum=" + PhoneNum +
                 ", Gender=" + Gender +
                 '}';
