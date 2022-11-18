@@ -1,4 +1,4 @@
-public class Controller extends UserController{
+public class Controller extends UserController {
     public  user AddUser(){
         user user = new user();
         user.setFIO(addFIO());

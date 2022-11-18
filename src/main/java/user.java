@@ -52,10 +52,9 @@ public class user {
 
     @Override
     public String toString() {
-        return "FIO=" + Arrays.toString(FIO) +
-                ", DateOfBirth='" + DateOfBirth + '\'' +
-                ", PhoneNum=" + PhoneNum +
-                ", Gender=" + Gender +
-                '}';
+        return "ФИО=" + Arrays.toString(FIO) +
+                ", Дата рождения='" + DateOfBirth + '\'' +
+                ", Номер телефона=" + PhoneNum +
+                ", Пол=" + Gender +';';
     }
 }

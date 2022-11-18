@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -19,8 +18,7 @@ public class UserController extends user {
         try {
             Scanner sc = new Scanner(System.in);
             System.out.print("номер телефона без символов-> ");
-            long num = sc.nextLong();
-            return num;
+            return sc.nextLong();
         } catch (InputMismatchException ex) {
             System.out.println("неккоректный ввод данных");
         }
@@ -76,7 +74,7 @@ public class UserController extends user {
         return gender.charAt(0);
 
     }
-    public  user AddUser(){
+    public user AddUser(){
         user user = new user();
         user.setFIO(addFIO());
         user.setDateOfBirth(addDateOfBirth());
@@ -84,10 +82,5 @@ public class UserController extends user {
         user.setGender(addGender());
 
         return user;
-    }
-
-    public static void main(String[] args) {
-        UserController userController = new UserController();
-        System.out.println(userController.AddUser());
     }
 }
