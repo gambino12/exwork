@@ -6,15 +6,6 @@ public class user {
     private long PhoneNum;
     private char Gender;
 
-
-
-    public user(String[] FIO, String dateOfBirth, long phoneNum, char gender) {
-        this.FIO = FIO;
-        DateOfBirth = dateOfBirth;
-        PhoneNum = phoneNum;
-        Gender = gender;
-    }
-
     public user() {
     }
 
@@ -26,24 +17,12 @@ public class user {
         this.FIO = FIO;
     }
 
-    public String getDateOfBirth() {
-        return DateOfBirth;
-    }
-
     public void setDateOfBirth(String dateOfBirth) {
         DateOfBirth = dateOfBirth;
     }
 
-    public long getPhoneNum() {
-        return PhoneNum;
-    }
-
     public void setPhoneNum(long phoneNum) {
         PhoneNum = phoneNum;
-    }
-
-    public char getGender() {
-        return Gender;
     }
 
     public void setGender(char gender) {

@@ -74,13 +74,5 @@ public class UserController extends user {
         return gender.charAt(0);
 
     }
-    public user AddUser(){
-        user user = new user();
-        user.setFIO(addFIO());
-        user.setDateOfBirth(addDateOfBirth());
-        user.setPhoneNum(addPhonenum());
-        user.setGender(addGender());
 
-        return user;
-    }
 }
